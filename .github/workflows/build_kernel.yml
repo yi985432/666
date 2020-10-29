@@ -14,13 +14,13 @@ on:
     types: [started]
     
 env:
-  KERNEL_URL: https://github.com/yaoxiaonie/android_kernel_xiaomi_gemini.git
+  KERNEL_URL: https://github.com/yi985432/kernel_olive_lolz
   GCC_ARM64: https://github.com/yaoxiaonie/arm64-gcc.git
   GCC_ARM: https://github.com/yaoxiaonie/arm32-gcc.git
   CLANG: https://github.com/yaoxiaonie/clang.git
   GCC_ARM64_TYPE: aarch64-elf
   GCC_ARM_TYPE: arm-eabi
-  DEFCONFIG_NAME: gemini_defconfig
+  DEFCONFIG_NAME: lolz_olive_defconfig
   BUILD_USER: Actions
   BUILD_HOST: MistyRain
 jobs:
