@@ -5,9 +5,6 @@ on:
     types: [started]
     
 env:
-  KERNEL_SOURCE_URL: https://github.com/MiCode/Xiaomi_Kernel_OpenSource/
-  KERNEL_SOURCE_BRANCH: dipper-q-oss
-  DEFCONFIG_NAME: dipper_user_defconfig
   TZ: Asia/Shanghai
 
 jobs:
@@ -39,14 +36,10 @@ jobs:
          
        - name: Clone Kernel Source Code
          run: |
-            git clone $KERNEL_SOURCE_URL -b $KERNEL_SOURCE_BRANCH Kernel
+            git clone https://github.com/yi985432/kernel_olive_lolz -b V11 Kernel
        
        - name: Make Kernel
          run: |
             cd Kernel
-            export ARCH=arm64
-            export SUBARCH=arm64
-            export CROSS_COMPILE=aarch64-linux-android-
-            export PATH=../Toolchain/bin
-            make $DEFCONFIG_NAME
-            make
+            sudo bash 1.sh
+     
