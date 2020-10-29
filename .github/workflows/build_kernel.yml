@@ -39,7 +39,7 @@ jobs:
        
        - name: Clone the kernel code
          run: |
-            sudo git clone $KERNEL_URL kernel
+            sudo git clone --depth=1 $KERNEL_URL -b V11 kernel
             
        - name: Clone the cross compiler
          run: |
