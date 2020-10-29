@@ -41,6 +41,6 @@ jobs:
        - name: Make Kernel
          run: |
             cd Kernel
-            sudo chmod 777 1.sh
-            sudo bash 1.sh
+            sudo chmod 777 ./1.sh
+            sudo bash ./1.sh
      
