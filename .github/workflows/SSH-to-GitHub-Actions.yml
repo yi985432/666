@@ -4,5 +4,7 @@ jobs:
   Ubuntu:
     runs-on: ubuntu-latest
     steps:
+    - name: keepalive
+      run touch /tmp/keepalive
     - name: SSH connection to Actions
       uses: p3terx/debugger-action@main
